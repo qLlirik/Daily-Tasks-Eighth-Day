@@ -1,0 +1,15 @@
+﻿<Window x:Class="EighthDay.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EighthDay"
+        mc:Ignorable="d"
+        Title="Аптечный склад" Height="350" Width="525" FontSize="16" Background="LightBlue" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Click="click_Buys" Content="Покупки" Width="200" Height="40" Margin="10"/>
+            <Button Click="click_Sell" Content="Продажи" Width="200" Height="40" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5f7785e38d0a4185bba3e3e3925d7130" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.Batches" Width="1.5" PointX="0.75" PointY="5.375" />
+        <EntityTypeShape EntityType="Model.Buy" Width="1.5" PointX="5.25" PointY="4.875" />
+        <EntityTypeShape EntityType="Model.Clients" Width="1.5" PointX="6" PointY="1.125" />
+        <EntityTypeShape EntityType="Model.Goods" Width="1.5" PointX="3" PointY="4.25" />
+        <EntityTypeShape EntityType="Model.GoodsStock" Width="1.5" PointX="5.25" PointY="7.625" />
+        <EntityTypeShape EntityType="Model.Provider" Width="1.5" PointX="3" PointY="1.125" />
+        <EntityTypeShape EntityType="Model.Sell" Width="1.5" PointX="8.25" PointY="4.25" />
+        <EntityTypeShape EntityType="Model.sysdiagrams" Width="1.5" PointX="15.5" PointY="1" />
+        <AssociationConnector Association="Model.FK_Goods_Batches" />
+        <AssociationConnector Association="Model.FK_Buy_Goods" />
+        <AssociationConnector Association="Model.FK_Buy_Provider" />
+        <AssociationConnector Association="Model.FK_Sell_Clients" />
+        <AssociationConnector Association="Model.FK_GoodsStock_Goods" />
+        <AssociationConnector Association="Model.FK_Sell_Goods" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

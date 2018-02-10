@@ -1,0 +1,63 @@
+﻿<Window x:Class="EighthDay.Windows.AddNewGoodWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EighthDay.Windows"
+        mc:Ignorable="d"
+                Title="Аптечный склад" Height="600" Width="800" FontSize="16" Background="LightBlue" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Button Click="click_Back" Content="Назад" Width="100" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10"/>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
+                <TextBlock Text="                   Наименование: "/>
+                <TextBox x:Name="tbxName" Width="200" MaxLength="40"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
+                <TextBlock Text="Международное название: " VerticalAlignment="Center"/>
+                <TextBox x:Name="tbxInternational" Width="200" MaxLength="40"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
+                <TextBlock Text="             Дата производства: " VerticalAlignment="Center"/>
+                <DatePicker x:Name="dpBegin" Width="200"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
+                <TextBlock Text="                              Годен до: " VerticalAlignment="Center"/>
+                <DatePicker x:Name="dpEnd" Width="200"/>
+            </StackPanel>
+            
+            <CheckBox x:Name="chbxYes" Margin="230 5 0 5" HorizontalAlignment="Center" Content="Одобрено Минздравом РФ" IsChecked="True"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
+                <TextBlock Text="        Рег. № Минздрава РФ: " VerticalAlignment="Center"/>
+                <TextBox x:Name="tbxRF" Width="200" MaxLength="20"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
+                <TextBlock Text="                   Производитель: " VerticalAlignment="Center"/>
+                <TextBox x:Name="tbxProducer" Width="200" MaxLength="60"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
+                <TextBlock Text="                         Инструкция: " VerticalAlignment="Center"/>
+                <TextBox x:Name="tbxInstructions" Width="200" MaxLength="40"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
+                <TextBlock Text="                      Вид упаковки: " VerticalAlignment="Center"/>
+                <ComboBox x:Name="cbxBatch" Width="200"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
+                <TextBlock Text="                                    Цена: " VerticalAlignment="Center"/>
+                <TextBox x:Name="tbxPrice" Width="200" MaxLength="10"/>
+            </StackPanel>
+            
+            <Button Click="click_Add" Content="Добавить" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Window>
